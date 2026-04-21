@@ -4,8 +4,8 @@ const BASE_URL = "https://t4e-testserver.onrender.com/api";
 
 export const getToken = async (studentId, password, set) => {
   const { data } = await axios.post(`${BASE_URL}/public/token`, {
-    studentId: E0423023,
-    password: 581442,
+    studentId: "E0423023",
+    password: "581442",
     set : "set A",
   });
   return data;
